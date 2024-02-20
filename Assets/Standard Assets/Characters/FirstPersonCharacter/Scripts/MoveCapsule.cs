@@ -19,7 +19,8 @@ public class MoveCapsule : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime);
+        //this.transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime);
+        this.transform.Translate(new Vector3(0,0,1) * speed * Time.deltaTime);
         if (Input.GetKey(KeyCode.LeftShift)) {
             speed = sprintSpeed;
         } else {
