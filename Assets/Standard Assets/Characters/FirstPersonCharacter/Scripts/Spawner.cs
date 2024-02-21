@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(capsule, new Vector3(230, 1, 516), Quaternion.identity);
+        Instantiate(capsule, new Vector3(230, 0, 516), Quaternion.identity);
     }
 
     // Update is called once per frame
